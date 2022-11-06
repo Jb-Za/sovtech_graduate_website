@@ -56,56 +56,87 @@
   font-size: 1.5rem;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+
+
+.parallax {
+  width: 50%;
+  inset: -50px 0px;
 }
 
-.grid {
+.imageBox {
+  width: 100%;
+}
+
+.imageStyle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.links {
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+  padding: 1rem;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
+.textBox {
+  min-height: 30rem;
+  flex: 1;
+  justify-content: center;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+
+.blerbHolder {
+  
+  width: 80%;
+
+  padding: 1rem;
+  
+}
+
+.blerbHolder >* {
+  margin: 0.2rem;
+}
+
+
+.headings {
+  display: block;
+  text-align: center;
+  color: #e04e2a;
+  white-space: pre-line;
+  padding: 0.5rem;
+  font-size: 2.2rem;
+  font-weight: 600;
   text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.paragraphs {
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  white-space: pre-line;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  text-decoration: none;
+
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.row {
+  display: flex;
+  width: 100%;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.rowReverse {
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
 }
 
 @media (max-width: 600px) {
@@ -113,16 +144,27 @@
     width: 100%;
     flex-direction: column;
   }
+
+  .row {
+    flex-direction: column;
+  }
+  
+  .rowReverse {
+    flex-direction: column;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
+
   .card,
   .footer {
     border-color: #222;
   }
+
   .code {
     background: #111;
   }
+
   .logo img {
     filter: invert(1);
   }
