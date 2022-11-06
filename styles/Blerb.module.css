@@ -1,0 +1,62 @@
+.textBox {
+  min-height: 30rem;
+  flex: 1;
+  justify-content: center;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.blerbHolder {
+  width: 80%;
+
+  padding: 1rem;
+}
+
+.blerbHolder > * {
+  margin: 0.2rem;
+}
+
+.headings {
+  display: block;
+  text-align: center;
+  color: #e04e2a;
+  white-space: pre-line;
+  padding: 0.5rem;
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.paragraphs {
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  white-space: pre-line;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.rowReverse {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  .row {
+    flex-direction: row;
+  }
+
+  .rowReverse {
+    flex-direction: row-reverse;
+  }
+}

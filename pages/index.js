@@ -1,9 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import ImageSlider from "./ImageSlider";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
-import classNames from "classnames";
+import { Blerb } from "./components/Blerb.js";
 
 const aboutMeImages = [{ url: "unknown2.png" }];
 
@@ -15,25 +13,6 @@ const HonoursProjectImages = [
 ];
 
 const SovTechImages = [{ url: "sovtech2.png" }];
-
-function Blerb({ title, items, images, reverse }) {
-  return (
-    <div
-      className={classNames(
-        styles.blerbHolder,
-        reverse ? styles.rowReverse : styles.row
-      )}
-    >
-      <ImageSlider slides={images} />
-
-      <div className={styles.textBox}>
-        <p className={styles.headings}>{title}</p>
-        <hr></hr>
-        <p className={styles.paragraphs}>{items}</p>
-      </div>
-    </div>
-  );
-}
 
 export default function Home() {
   return (
@@ -50,10 +29,10 @@ export default function Home() {
         <hr></hr>
 
         <Blerb
-          title={"About Me"}
+          title={<>About Me</>}
           images={aboutMeImages}
           reverse={true}
-          items={
+          body={
             <>
               My name is Joshua Bode, I am 25 years old and I enjoy coding. My
               main coding skills are in Python, Java, and Lua, and I've dabbled
@@ -66,25 +45,44 @@ export default function Home() {
           }
         />
         <Blerb
-          title={"My Studies \n University of the Westen Cape"}
+          title={
+            <>
+              My Studies
+              <br />
+              University of the Westen Cape
+            </>
+          }
           images={universityImages}
           reverse={false}
-          items={
+          body={
             <>
-              Bachelor of Science: Computer Science January 2017 - November 2021
-              Bachelor of Science (Honours): Computer Science January 2022 -
-              November 2022 To the left you'll see a picture one of the computer
-              labs that I made my home daily while working on projects and
-              supervising the lab, making sure that everything was working
-              smoothly.
+              Bachelor of Science: Computer Science
+              <br />
+              January 2017 - November 2021
+              <br />
+              <br />
+              Bachelor of Science (Honours): Computer Science
+              <br />
+              January 2022 - November 2022
+              <br />
+              <br />
+              To the left you'll see a picture one of the computer labs that I
+              made my home daily while working on projects and supervising the
+              lab, making sure that everything was working smoothly.
             </>
           }
         />
         <Blerb
-          title={"My Honours Project \n Quantum Teleportation Protocol"}
+          title={
+            <>
+              My Honours Project
+              <br />
+              Quantum Teleportation Protocol
+            </>
+          }
           images={HonoursProjectImages}
           reverse={true}
-          items={
+          body={
             <>
               The project required me to transfer images and text between
               entangled particles, using IBM's quantum cloud devices. It was
@@ -101,10 +99,10 @@ export default function Home() {
           }
         />
         <Blerb
-          title={"Why I want to be a developer at Sovtech"}
+          title={<>Why I want to be a developer at Sovtech</>}
           images={SovTechImages}
           reverse={false}
-          items={
+          body={
             <>
               I believe that the graduate programme would be perfectly suited
               towards me, as it would allow me to enter the software development
@@ -116,9 +114,11 @@ export default function Home() {
           }
         />
       </main>
-
+      <hr/>
       <footer className={styles.footer}>
+      
         <div className={styles.links}>
+          
           <a target="_blank" rel="noreferrer" href="https://github.com/jb-za">
             <FaGithubSquare />
           </a>
