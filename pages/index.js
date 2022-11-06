@@ -35,12 +35,15 @@ export default function Home() {
           body={
             <>
               My name is Joshua Bode, I am 25 years old and I enjoy coding. My
-              main coding skills are in Python, Java, and Lua, and I've dabbled
-              in areas like frontent with Javascript, XML, and Flutter/Dart
-              apps. I'm currently completing my Honours degree in Computer
-              Science and am looking to enter the software development field,
-              preferably at a company that will guide me toward working on and
-              contributing toward fun and exciting projects.
+              main coding skills are in Python, Java, and Lua, and I have some
+              experience in frontent with Javascript, XML, and Flutter/Dart
+              apps.
+              <br />
+              <br />
+              I'm currently completing my Honours degree in Computer Science and
+              am looking to enter the software development field, preferably at
+              a company that will guide me toward working on and contributing
+              toward fun and exciting projects.
             </>
           }
         />
@@ -109,16 +112,15 @@ export default function Home() {
               field, while engaging with experienced professionals within the
               field. I believe that the mentorship aspect would allow me to grow
               and hone my skills while being challenged daily with new ideas and
-              skills.
+              concepts that will expand my knowledge base and help me to become
+              a great developer.
             </>
           }
         />
       </main>
-      <hr/>
+      <hr />
       <footer className={styles.footer}>
-      
         <div className={styles.links}>
-          
           <a target="_blank" rel="noreferrer" href="https://github.com/jb-za">
             <FaGithubSquare />
           </a>
