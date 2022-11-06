@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
-import { Blerb } from "./components/Blerb.js";
+import { Blerb } from "../components/Blerb.js";
 
 const aboutMeImages = [{ url: "unknown2.png" }];
 

@@ -1,5 +1,5 @@
 import { ImageSlider } from "./ImageSlider";
-import styles from "../../styles/Blerb.module.css";
+import styles from "../styles/Blerb.module.css";
 import classNames from "classnames";
 
 export function Blerb({ title, body, images, reverse }) {

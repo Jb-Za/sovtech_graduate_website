@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
-import styles from "../../styles/Slider.module.css";
+import styles from "../styles/Slider.module.css";
 
 export const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
