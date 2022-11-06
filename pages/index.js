@@ -18,8 +18,23 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Joshua Bode</title>
-        <meta name="description" />
+        <title>Joshua Bode | Computer Science Graduate</title>
+        <meta
+          name="description"
+          content="I am a Bsc Computer Science Honours Graduate, looking to enter the software development field."
+        />
+        <meta
+          name="og:title"
+          content="Joshua Bode | Computer Science graduate"
+        />
+        <meta
+          name="og:description"
+          content="I am a Bsc Computer Science Honours Graduate, looking to enter the software development field."
+        />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
