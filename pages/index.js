@@ -8,7 +8,7 @@ const aboutMeImages = [{ url: "unknown2.png" }];
 const universityImages = [{ url: "uwcHall.jpg" }, { url: "uwcLab.png" }];
 
 const HonoursProjectImages = [
-  { url: "circuit.png" },
+  { url: "Circuit.png" },
   { url: "teleportation.png" },
 ];
 
